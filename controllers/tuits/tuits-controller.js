@@ -11,6 +11,10 @@ const createTuit = (req, res) => {
     newTuit.dislikes = 0;
     newTuit.liked = false;
     newTuit.disliked = false;
+    newTuit.username = "spaceX";
+    newTuit.time = "2h";
+    newTuit.title = "new published tuits";
+    newTuit.handle = "@spacex";
     newTuit.image = "https://www.reuters.com/resizer/S2QZTkoqSfT_OagpUN2LL5FX5j8=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/TXDGVXPBEVMY5PA2RHRF2EA25Y.jpg";
     tuits.push(newTuit);
     res.json(newTuit);
